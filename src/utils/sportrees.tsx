@@ -2,7 +2,7 @@ import { type ReactNode } from "react";
 import { SocialIcon } from "react-social-icons";
 const SPORTREE_NAMES = ["szymon-godziek"];
 import { FaMedal } from "react-icons/fa6";
-
+import ReactCountryFlag from "react-country-flag";
 export type Sponsor = {
   imgUrl: string;
   name: string;
@@ -19,7 +19,7 @@ type Sportree = {
   name: string;
   avatar: string;
   video: string;
-  flag: string;
+  flag: ReactNode;
   achievements: Array<{
     place: ReactNode;
     description: string;
@@ -36,7 +36,7 @@ export const HARDCODED_SPORTREES: Record<
     id: 1,
     name: "Szymon Godziek",
     avatar: "/avatar.jpg",
-    flag: "🇵🇱",
+    flag: <ReactCountryFlag countryCode="PL" />,
     video: "/simongodziek.mp4",
     achievements: [
       {

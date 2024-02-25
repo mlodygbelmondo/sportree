@@ -16,7 +16,6 @@ export async function generateMetadata({ params: { name } }: Props) {
 }
 
 const Page = ({ params: { name } }: Props) => {
-  console.log(name);
   const sportree = HARDCODED_SPORTREES[name];
 
   if (!sportree) {
@@ -38,25 +37,22 @@ const Page = ({ params: { name } }: Props) => {
             src={sportree.avatar}
             className="rounded-full"
           />
-          <div className="flex flex-col gap-3 px-6 sm:p-0">
+          <div className="flex flex-col gap-1 px-6 sm:p-0">
             <h1 className="text-center text-2xl font-semibold">
               {sportree.name} {sportree.flag}
             </h1>
-            <div className="bg-sportree-card-bg rounded-xl border-2 border-black p-2 px-10 sm:w-60 sm:p-2">
-              <div className="text-center text-lg font-medium">
-                Achievements 🏆
-              </div>
+            <div className="bg-sportree-card-bg rounded-xl p-2 px-10 sm:w-60 sm:p-2">
               <div className="flex w-full flex-col items-center justify-center gap-1">
                 {sportree.achievements.map((achievement, index) => (
                   <div
                     key={index}
                     className="flex w-full items-center gap-2 overflow-hidden whitespace-nowrap"
                   >
-                    <div className="flex w-full items-center justify-center gap-1 truncate font-semibold leading-5">
+                    <div className="flex w-full items-center justify-center gap-1.5 truncate font-semibold leading-5">
+                      <span className="text-2xl">{achievement.place}</span>
                       <span className="no-scrollbar overflow-scroll sm:w-56">
                         {achievement.description}
                       </span>
-                      <span className="text-2xl">{achievement.place}</span>
                     </div>
                   </div>
                 ))}
@@ -69,6 +65,9 @@ const Page = ({ params: { name } }: Props) => {
 
         <Links links={sportree.links} />
       </div>
+      <footer className="fixed bottom-2 text-sm text-gray-200">
+        © Sportree 2024
+      </footer>
     </div>
   );
 };

@@ -24,7 +24,7 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  scale: 1.2;
+  scale: 1;
 }
 
 #avatar {
@@ -37,14 +37,13 @@ body {
   position: fixed;
   top: 20px;
   background-color: rgba(35, 35, 35, 0.4);
-  border: solid 1px black;
   border-radius: 14px;
   display: flex;
   flex-direction: column;
   gap: 15px;
   align-items: center;
   color: white;
-  bottom: 20px;
+  bottom: 40px;
 }
 
 .achievment {
@@ -81,9 +80,8 @@ body {
   background-color: red;
   text-align: center;
   padding: 10px;
-  border: 2px solid black;
   margin-top: 8px;
-  background-color: rgba(35, 35, 35, 0.2);
+  background-color: rgba(35, 35, 35, 0.4);
   border-radius: 14px;
 }
 
