@@ -9,7 +9,7 @@ export default {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
       colors: {
-        "sportree-card-bg": "rgba(35, 35, 35, 0.2)",
+        "sportree-card-bg": "rgba(35, 35, 35, 0.4)",
       },
     },
   },
