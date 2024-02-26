@@ -37,9 +37,9 @@ export const HARDCODED_SPORTREES: Record<
   "szymon-godziek": {
     id: 1,
     name: "Szymon Godziek",
-    avatar: "/avatar.jpg",
+    avatar: "/hardcoded-sportrees/szymon-godziek/avatar.jpg",
     flag: <Flag code="PL" style={{ width: "24px", height: "24px" }} />,
-    video: "/simongodziek.mp4",
+    video: "/hardcoded-sportrees/szymon-godziek/simongodziek.mp4",
     achievements: [
       {
         place: "2nd",
