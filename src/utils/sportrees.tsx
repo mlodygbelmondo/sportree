@@ -1,11 +1,12 @@
 import { type ReactNode } from "react";
 import { SocialIcon } from "react-social-icons";
 const SPORTREE_NAMES = ["szymon-godziek"];
-import { FaMedal } from "react-icons/fa6";
 import ReactCountryFlag from "react-country-flag";
+
 export type Sponsor = {
   imgUrl: string;
   name: string;
+  link: string;
 };
 
 export type SportreeLink = {
@@ -40,15 +41,15 @@ export const HARDCODED_SPORTREES: Record<
     video: "/simongodziek.mp4",
     achievements: [
       {
-        place: <FaMedal className="text-amber-400" />,
+        place: "1st",
         description: "White Style Leogang 2016",
       },
       {
-        place: <FaMedal className="text-slate-200" />,
+        place: "2nd",
         description: "Redbull Rampage 2022",
       },
       {
-        place: <FaMedal className="text-yellow-800" />,
+        place: "3rd",
         description: "FMB World Tour 2017",
       },
     ],
@@ -56,34 +57,42 @@ export const HARDCODED_SPORTREES: Record<
       {
         imgUrl: "https://i.ibb.co/GxVGwMb/adidasfiveten.jpg",
         name: "Adidas Five Ten",
+        link: "https://www.adidas.com",
       },
       {
         imgUrl: "https://i.ibb.co/7YH3nqK/redbull.jpg",
         name: "Redbull",
+        link: "https://www.redbull.com",
       },
       {
         imgUrl: "https://i.ibb.co/12HjFHh/reversecomponents.jpg",
         name: "Reverse Components",
+        link: "https://www.reverse-components.com",
       },
       {
         imgUrl: "https://i.ibb.co/QpywqL0/specialized.jpg",
         name: "Specialized",
+        link: "https://www.specialized.com",
       },
       {
         imgUrl: "https://i.ibb.co/zsJXyMY/specteyewear.jpg",
         name: "Spect Eyewear",
+        link: "https://www.specteyewear.com",
       },
       {
         imgUrl: "https://i.ibb.co/fGk40L7/continentalmtb.jpg",
         name: "Continental MTB",
+        link: "https://www.continental-tires.com",
       },
       {
         imgUrl: "https://i.ibb.co/M60X4V0/dometic.jpg",
         name: "Dometic",
+        link: "https://www.dometic.com",
       },
       {
         imgUrl: "https://i.ibb.co/zZpXkbC/leatt.jpg",
         name: "Leatt",
+        link: "https://www.leatt.com",
       },
     ],
     links: [
