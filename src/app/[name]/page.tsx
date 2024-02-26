@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { notFound } from "next/navigation";
 import Links from "~/components/sportree-site/links";
 import Sponsors from "~/components/sportree-site/sponsors";
 import { HARDCODED_SPORTREES } from "~/utils/sportrees";
@@ -19,7 +20,7 @@ const Page = ({ params: { name } }: Props) => {
   const sportree = HARDCODED_SPORTREES[name];
 
   if (!sportree) {
-    return <div>Sportree not found</div>;
+    return notFound();
   }
 
   return (

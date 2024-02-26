@@ -8,6 +8,7 @@ export default {
         poppins: ["Poppins", "serif"],
       },
       colors: {
+        beige: "#faf6f1",
         "sportree-card-bg": "rgba(35, 35, 35, 0.4)",
       },
     },
