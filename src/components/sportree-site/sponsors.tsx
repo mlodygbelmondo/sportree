@@ -24,7 +24,7 @@ const Sponsors: FunctionComponent<Props> = ({ sponsors }) => {
             width={sponsorSize}
             height={sponsorSize}
             draggable={false}
-            className=" none rounded-full transition-transform duration-300 ease-in-out hover:scale-125 hover:cursor-pointer"
+            className="rounded-full transition-transform duration-300 ease-in-out hover:scale-125"
             alt={sponsor.name}
             src={sponsor.imgUrl}
           />

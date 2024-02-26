@@ -38,10 +38,10 @@ const Page = ({ params: { name } }: Props) => {
             className="rounded-full"
           />
           <div className="flex flex-col gap-1 px-6 sm:p-0">
-            <h1 className="text-center text-2xl font-semibold">
+            <h1 className="flex items-center justify-center gap-2 text-center text-2xl font-semibold">
               {sportree.name} {sportree.flag}
             </h1>
-            <div className="bg-sportree-card-bg rounded-xl p-2 px-10 sm:w-64 sm:p-2">
+            <div className="rounded-xl bg-sportree-card-bg p-2 px-10 sm:w-64 sm:p-2">
               <div className="flex w-full flex-col items-center justify-center gap-1">
                 {sportree.achievements.map((achievement, index) => (
                   <div

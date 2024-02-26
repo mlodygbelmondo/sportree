@@ -1,7 +1,8 @@
 import { type ReactNode } from "react";
 import { SocialIcon } from "react-social-icons";
+import Flag from "react-world-flags";
+
 const SPORTREE_NAMES = ["szymon-godziek"];
-import ReactCountryFlag from "react-country-flag";
 
 export type Sponsor = {
   imgUrl: string;
@@ -37,20 +38,20 @@ export const HARDCODED_SPORTREES: Record<
     id: 1,
     name: "Szymon Godziek",
     avatar: "/avatar.jpg",
-    flag: <ReactCountryFlag countryCode="PL" />,
+    flag: <Flag code="PL" style={{ width: "26px", height: "26px" }} />,
     video: "/simongodziek.mp4",
     achievements: [
-      {
-        place: "1st",
-        description: "White Style Leogang 2016",
-      },
       {
         place: "2nd",
         description: "Redbull Rampage 2022",
       },
       {
         place: "3rd",
-        description: "FMB World Tour 2017",
+        description: "Redbull Roof Ride 2021",
+      },
+      {
+        place: "4th",
+        description: "Redbull Roof Ride 2023",
       },
     ],
     sponsors: [
