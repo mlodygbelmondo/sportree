@@ -118,11 +118,6 @@ export const HARDCODED_SPORTREES: Record<
         name: "Facebook",
       },
       {
-        icon: "Pinkbike",
-        url: "https://www.pinkbike.com/",
-        name: "Pinkbike",
-      },
-      {
         icon: "Beerduro",
         url: "https://beerduro.store/",
         name: "Beerduro Store",

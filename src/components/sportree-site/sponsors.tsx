@@ -19,7 +19,12 @@ const Sponsors: FunctionComponent<Props> = ({ sponsors }) => {
     <div className="flex flex-wrap items-center justify-center gap-4 px-10 sm:p-0">
       {sponsors.map((sponsor, index) => (
         /** @todo add link */
-        <Link key={index} href={sponsor.link} target="_blank">
+        <Link
+          key={index}
+          href={sponsor.link}
+          className="rounded-full"
+          target="_blank"
+        >
           <Image
             width={sponsorSize}
             height={sponsorSize}
