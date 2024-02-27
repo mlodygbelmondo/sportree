@@ -18,7 +18,6 @@ const Sponsors: FunctionComponent<Props> = ({ sponsors }) => {
   return (
     <div className="flex flex-wrap items-center justify-center gap-4 px-10 sm:p-0">
       {sponsors.map((sponsor, index) => (
-        /** @todo add link */
         <Link
           key={index}
           href={sponsor.link}
