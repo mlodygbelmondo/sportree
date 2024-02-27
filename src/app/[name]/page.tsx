@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import BackgroundVideo from "~/components/sportree-site/background-video";
 import Links from "~/components/sportree-site/links";
 import Sponsors from "~/components/sportree-site/sponsors";
 import { HARDCODED_SPORTREES } from "~/utils/sportrees";
@@ -25,11 +26,8 @@ const Page = ({ params: { name } }: Props) => {
 
   return (
     <div id="app">
-      <video autoPlay loop muted playsInline className="back-video">
-        <source src={sportree.video} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <div className="main-container no-scrollbar w-[90vw] overflow-auto p-2 sm:w-[450px] sm:p-5">
+      <BackgroundVideo video={sportree.video} />
+      <div className="main-container no-scrollbar w-[90vw] overflow-y-auto overflow-x-hidden p-2 sm:w-[450px] sm:p-5">
         <div className="flex w-full flex-col items-center gap-2 sm:flex-row">
           <Image
             width={154}
