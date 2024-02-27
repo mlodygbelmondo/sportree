@@ -42,7 +42,7 @@ const Page = ({ params: { name } }: Props) => {
             <h1 className="flex items-center justify-center gap-2 text-center text-2xl font-semibold">
               {sportree.name} {sportree.flag}
             </h1>
-            <div className="rounded-xl bg-sportree-card-bg p-2 px-10 sm:w-64 sm:p-2">
+            <div className="xs:px-4 xs:text-base rounded-xl bg-sportree-card-bg p-2 px-2 text-[15px] sm:w-64 sm:p-2">
               <div className="flex w-full flex-col items-center justify-center gap-1">
                 {sportree.achievements.map((achievement, index) => (
                   <div
