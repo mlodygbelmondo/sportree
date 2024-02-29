@@ -40,14 +40,14 @@ const Page = ({ params: { name } }: Props) => {
             <h1 className="flex items-center justify-center gap-2 text-center text-2xl font-semibold">
               {sportree.name} {sportree.flag}
             </h1>
-            <div className="rounded-xl bg-sportree-card-bg p-2 px-2 text-[15px] xs:px-2 xs:text-base sm:w-64 sm:p-2">
-              <div className="flex w-full flex-col items-center justify-center gap-1">
+            <div className="rounded-xl bg-sportree-card-bg p-2 px-2 text-[15px] leading-6 xs:px-2 xs:text-base sm:w-64 sm:p-2">
+              <div className="flex w-full flex-col items-center justify-center gap-1 sm:gap-0">
                 {sportree.achievements.map((achievement, index) => (
                   <div
                     key={index}
                     className="flex w-full items-center overflow-hidden whitespace-nowrap"
                   >
-                    <div className="flex w-full items-center justify-start gap-1 truncate leading-5">
+                    <div className="flex w-full items-center justify-start gap-1 truncate">
                       <span className="flex h-8 w-8 items-center justify-center font-semibold">
                         {achievement.place}
                       </span>
