@@ -36,19 +36,19 @@ const Page = ({ params: { name } }: Props) => {
             src={sportree.avatar}
             className="rounded-full"
           />
-          <div className="flex flex-col gap-1 px-6 sm:p-0">
+          <div className="flex flex-col gap-1 px-2 sm:p-0">
             <h1 className="flex items-center justify-center gap-2 text-center text-2xl font-semibold">
               {sportree.name} {sportree.flag}
             </h1>
-            <div className="xs:px-4 xs:text-base rounded-xl bg-sportree-card-bg p-2 px-2 text-[15px] sm:w-64 sm:p-2">
+            <div className="rounded-xl bg-sportree-card-bg p-2 px-2 text-[15px] xs:px-2 xs:text-base sm:w-64 sm:p-2">
               <div className="flex w-full flex-col items-center justify-center gap-1">
                 {sportree.achievements.map((achievement, index) => (
                   <div
                     key={index}
-                    className="flex w-full items-center gap-2 overflow-hidden whitespace-nowrap"
+                    className="flex w-full items-center overflow-hidden whitespace-nowrap"
                   >
-                    <div className="flex w-full items-center justify-start gap-1.5 truncate leading-5">
-                      <span className="">{achievement.place}</span>
+                    <div className="flex w-full items-center justify-start gap-1 truncate leading-5">
+                      <span className="font-semibold">{achievement.place}</span>
                       <span className="no-scrollbar overflow-scroll sm:w-64">
                         {achievement.description}
                       </span>

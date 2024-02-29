@@ -6,6 +6,11 @@ export default {
     extend: {
       fontFamily: {
         poppins: ["Poppins", "serif"],
+        anta: "Anta",
+        russo: "Russo One",
+        bodoni: "Bodoni Moda",
+        contrail: "Contrail One",
+        museo: "MuseoModerno",
       },
       colors: {
         beige: "#faf6f1",

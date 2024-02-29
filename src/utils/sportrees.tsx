@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { type ReactNode } from "react";
 import { SocialIcon } from "react-social-icons";
 import Flag from "react-world-flags";
@@ -16,16 +17,18 @@ export type SportreeLink = {
   name: string;
 };
 
+export type Achievement = {
+  place: ReactNode;
+  description: string;
+};
+
 type Sportree = {
   id: number;
   name: string;
   avatar: string;
   video: string;
   flag: ReactNode;
-  achievements: Array<{
-    place: ReactNode;
-    description: string;
-  }>;
+  achievements: Array<Achievement>;
   sponsors: Array<Sponsor>;
   links: Array<SportreeLink>;
 };
@@ -42,15 +45,31 @@ export const HARDCODED_SPORTREES: Record<
     video: "/hardcoded-sportrees/szymon-godziek/simongodziek.mp4",
     achievements: [
       {
-        place: "2nd",
+        place: (
+          <Image
+            src="/images/medals/silver.png"
+            width={32}
+            height={32}
+            alt="achievement place"
+          />
+        ),
         description: "Redbull Rampage 2022",
       },
       {
-        place: "3rd",
+        place: (
+          <Image
+            src="/images/medals/bronze.png"
+            width={32}
+            height={32}
+            alt="achievement place"
+          />
+        ),
+
         description: "Redbull Roof Ride 2021",
       },
       {
         place: "4th",
+
         description: "Redbull Roof Ride 2023",
       },
     ],
@@ -133,15 +152,36 @@ export const HARDCODED_SPORTREES: Record<
     video: "/hardcoded-sportrees/dawid-godziek/davidgodziek.mp4",
     achievements: [
       {
-        place: "2nd",
-        description: "best MTB Slopestyle Rider 2023",
+        place: (
+          <Image
+            src="/images/medals/silver.png"
+            width={32}
+            height={32}
+            alt="achievement place"
+          />
+        ),
+        description: "Best MTB Slopestyle Rider 2023",
       },
       {
-        place: "1st",
+        place: (
+          <Image
+            src="/images/medals/gold.png"
+            width={32}
+            height={32}
+            alt="achievement place"
+          />
+        ),
         description: "X-Games BMX Dirt 2022",
       },
       {
-        place: "1st",
+        place: (
+          <Image
+            src="/images/medals/gold.png"
+            width={32}
+            height={32}
+            alt="achievement place"
+          />
+        ),
         description: "X-Games BMX Dirt 2018",
       },
     ],
