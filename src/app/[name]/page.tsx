@@ -48,7 +48,9 @@ const Page = ({ params: { name } }: Props) => {
                     className="flex w-full items-center overflow-hidden whitespace-nowrap"
                   >
                     <div className="flex w-full items-center justify-start gap-1 truncate leading-5">
-                      <span className="font-semibold">{achievement.place}</span>
+                      <span className="flex h-8 w-8 items-center justify-center font-semibold">
+                        {achievement.place}
+                      </span>
                       <span className="no-scrollbar overflow-scroll sm:w-64">
                         {achievement.description}
                       </span>
